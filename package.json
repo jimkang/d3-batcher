@@ -1,0 +1,24 @@
+{
+  "name": "d3-batcher",
+  "version": "1.0.0",
+  "description": "Organizes rendering specs into batches that can efficiently be rendered by d3-selection.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jimkang/d3-batcher.git"
+  },
+  "keywords": [],
+  "author": "Jim Kang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimkang/d3-batcher/issues"
+  },
+  "homepage": "https://github.com/jimkang/d3-batcher",
+  "devDependencies": {
+    "tape": "^3.0.3"
+  },
+  "dependencies": {}
+}
