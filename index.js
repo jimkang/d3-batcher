@@ -31,9 +31,14 @@ function Batcher(createOpts) {
     return batches;
   }
 
+  function clear() {
+    specsByIdByTag.clear();
+  }
+
   return {
     addSpecs: addSpecs,
-    getBatches: getBatches
+    getBatches: getBatches,
+    clear: clear
   };
 }
 

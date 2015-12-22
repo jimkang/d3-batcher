@@ -52,7 +52,12 @@ function runTest(testCase) {
         batches[tag], testCase.expected[tag], `Batch for ${tag} is correct.`
       );
     }
-    // t.deepEqual(batches, testCase.expected, 'Batches are correct.');
+
+    batcher.clear();
+
+    t.deepEqual(
+      Object.keys(batcher.getBatches()).length, 0, 'No batches after clearing.'
+    );
     t.end();
   });
 }
