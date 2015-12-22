@@ -3,6 +3,8 @@ d3-batcher
 
 Organizes rendering specs into batches that can efficiently be rendered by d3-selection.
 
+Requires v5.2 or higher in Node and ES6/Babelify in the browser.
+
 Installation
 ------------
 
