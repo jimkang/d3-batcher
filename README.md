@@ -1,7 +1,7 @@
 d3-batcher
 ==================
 
-Organizes rendering specs into batches that can efficiently be rendered by d3-selection.
+Organizes rendering specs into batches that can efficiently be rendered by d3-selection. Intended for use with d3-render-batches.
 
 Requires v5.2 or higher in Node and ES6/Babelify in the browser.
 
@@ -14,11 +14,8 @@ Usage
 -----
 
     var Batcher = require('d3-batcher');
-    var d3Selection = require('d3-selection');
 
-    var batcher = Batcher({
-      d3Selection: d3Selection
-    });
+    var batcher = Batcher();
 
     batcher.addSpecs([
       {
@@ -92,9 +89,9 @@ Usage
       }
     ]);
 
-    batcher.renderBatches();
+    batcher.getBatches();
 
-`renderBatches` will then render (enter/update/exit) all of the `rect`s together and all of the `path`s together, even though they were added in separate calls.
+`getBatches` will return an object with keys 'rect' and 'path'. The values for each of them will be arrays of all of the `rect` specs and all of the `path` specs, respectively. Now, all of the `rect`s together and all of the `path`s together, even though they were added in separate calls.
 
 Tests
 -----
