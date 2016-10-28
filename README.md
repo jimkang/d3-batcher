@@ -1,7 +1,7 @@
 d3-batcher
 ==================
 
-Organizes rendering specs into batches that can efficiently be rendered by d3-selection. Intended for use with d3-render-batches.
+Organizes rendering specs into batches that can efficiently be rendered by d3-selection. Intended for use with d3-render-batch.
 
 Requires v5.2 or higher in Node and ES6/Babelify in the browser.
 
@@ -96,7 +96,7 @@ Usage
 Tests
 -----
 
-Run tests with `make test`.
+Run tests with `make test`. Tests require Node 6. The module itself works with Node 0.12 or up.
 
 License
 -------

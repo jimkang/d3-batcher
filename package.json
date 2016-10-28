@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/jimkang/d3-batcher",
   "devDependencies": {
+    "d3-selection": "^1.0.2",
     "immutable": "^3.7.6",
-    "tape": "^3.0.3"
+    "tape": "^3.6.1"
   },
   "dependencies": {
-    "d3-selection": "^0.4.12",
     "lodash.compact": "^3.0.0"
   }
 }
