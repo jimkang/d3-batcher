@@ -1,6 +1,6 @@
 {
   "name": "d3-batcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Organizes rendering specs into batches that can efficiently be rendered by d3-selection.",
   "main": "index.js",
   "scripts": {
